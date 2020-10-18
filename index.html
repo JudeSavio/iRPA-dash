@@ -1,0 +1,188 @@
+<html>
+    <head>
+        <title>Basis Monitoring Dash</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" href="logo.ico">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div class="grid">
+            <main class="main">
+              <div class="main-header">
+                <div class="main-header__intro-wrapper">
+                  <div class="main-header__welcome">
+                    <div class="main-header__welcome-title text-light">Welcome</div>
+                    <div class="main-header__welcome-subtitle text-light">How are you today?</div>
+                  </div>
+                  <div class="quickview">
+                    <div class="quickview__item">
+                      <div class="quickview__item-total">6</div>
+                      <div class="quickview__item-description">
+                        <i class="far fa-calendar-alt"></i>
+                        <span class="text-light">T-Codes</span>
+                      </div>
+                    </div>
+                    <div class="quickview__item">
+                      <div class="quickview__item-total-date">KAD</div>
+                      <div class="quickview__item-description">
+                        <i class="far fa-comment"></i>
+                        <span class="text-light">System ID</span>
+                      </div>
+                    </div>
+                    <div class="quickview__item">
+                      <div class="quickview__item-total">400</div>
+                      <div class="quickview__item-description">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span class="text-light">Client</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="main-overview">
+                <div class="overviewCard">
+                  <div class="overviewCard-icon overviewCard-icon--calendar">
+                    <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxnPg0KCTxnPg0KCQk8cGF0aCBkPSJNNDM3LjAxOSw3NC45ODFDMzg4LjY2OCwyNi42MjksMzI0LjM4LDAuMDAxLDI1NiwwLjAwMVMxMjMuMzMyLDI2LjYyOSw3NC45OCw3NC45ODFDMjYuNjI5LDEyMy4zMzMsMCwxODcuNjIxLDAsMjU2LjAwMQ0KCQkJczI2LjYyOSwxMzIuNjY4LDc0Ljk4LDE4MS4wMTljNDguMzUyLDQ4LjM1MSwxMTIuNjQsNzQuOTgsMTgxLjAyLDc0Ljk4YzY4LjM4MSwwLDEzMi42NjgtMjYuNjI5LDE4MS4wMTktNzQuOTgNCgkJCUM0ODUuMzcxLDM4OC42NjcsNTEyLDMyNC4zNzksNTEyLDI1NS45OTlTNDg1LjM3MSwxMjMuMzMzLDQzNy4wMTksNzQuOTgxeiBNMjU2LDQ3Ny40NTMNCgkJCWMtMTIyLjEwOSwwLTIyMS40NTMtOTkuMzQzLTIyMS40NTMtMjIxLjQ1M1MxMzMuODkxLDM0LjU0OCwyNTYsMzQuNTQ4czIyMS40NTMsOTkuMzQzLDIyMS40NTMsMjIxLjQ1Mw0KCQkJUzM3OC4xMDksNDc3LjQ1MywyNTYsNDc3LjQ1M3oiLz4NCgk8L2c+DQo8L2c+DQo8Zz4NCgk8Zz4NCgkJPHBhdGggZD0iTTM5My45NTMsMTYwLjcwOWMtMjEuOTA2LTIxLjkwNC01Ny4zNTUtMjEuOTA2LTc5LjI2NC0wLjAwMWwtODkuMjM4LDg5LjIzOWwtMjguMTQtMjguMTQxDQoJCQljLTIxLjkwMy0yMS45MDMtNTcuMzU0LTIxLjkwNi03OS4yNjIsMGMtMjEuODUyLDIxLjg1Mi0yMS44NTMsNTcuNDA4LDAsNzkuMjZsNjcuNzcyLDY3Ljc3Mg0KCQkJYzEwLjU4NiwxMC41ODYsMjQuNjYsMTYuNDE2LDM5LjYzMSwxNi40MTZzMjkuMDQ1LTUuODMsMzkuNjMxLTE2LjQxNWwxMjguODctMTI4Ljg3DQoJCQlDNDE1LjgwNSwyMTguMTE4LDQxNS44MDUsMTgyLjU2MSwzOTMuOTUzLDE2MC43MDl6IE0zNjkuNTIyLDIxNS41NDFMMjQwLjY1MywzNDQuNDFjLTQuMDYxLDQuMDYtOS40NTksNi4yOTctMTUuMjAyLDYuMjk3DQoJCQlzLTExLjE0Mi0yLjIzNy0xNS4yMDItNi4yOTdsLTY3Ljc3MS02Ny43NzJjLTguMzgzLTguMzgzLTguMzgzLTIyLjAyMiwwLTMwLjQwM2M4LjQwMi04LjQwMSwyMi04LjQwNCwzMC40MDQsMGw0MC4zNTUsNDAuMzU1DQoJCQljMy4yMzksMy4yMzksNy42MzMsNS4wNTksMTIuMjE0LDUuMDU5czguOTc1LTEuODIsMTIuMjE0LTUuMDU5bDEwMS40NTMtMTAxLjQ1M2M4LjQwMi04LjQwMSwyMi4wMDItOC40MDQsMzAuNDA0LDANCgkJCUMzNzcuOTA2LDE5My41MiwzNzcuOTA2LDIwNy4xNTksMzY5LjUyMiwyMTUuNTQxeiIvPg0KCTwvZz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjwvc3ZnPg0K" />
+                  </div>
+                  <div class="overviewCard-description">
+                    <h3 class="overviewCard-title text-light">SICK</h3>
+                    <p class="overviewCard-subtitle">Completed</p>
+                  </div>
+                </div>
+                <div class="overviewCard">
+                  <div class="overviewCard-icon overviewCard-icon--calendar">
+                     <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxnPg0KCTxnPg0KCQk8cGF0aCBkPSJNNDM3LjAxOSw3NC45ODFDMzg4LjY2OCwyNi42MjksMzI0LjM4LDAuMDAxLDI1NiwwLjAwMVMxMjMuMzMyLDI2LjYyOSw3NC45OCw3NC45ODFDMjYuNjI5LDEyMy4zMzMsMCwxODcuNjIxLDAsMjU2LjAwMQ0KCQkJczI2LjYyOSwxMzIuNjY4LDc0Ljk4LDE4MS4wMTljNDguMzUyLDQ4LjM1MSwxMTIuNjQsNzQuOTgsMTgxLjAyLDc0Ljk4YzY4LjM4MSwwLDEzMi42NjgtMjYuNjI5LDE4MS4wMTktNzQuOTgNCgkJCUM0ODUuMzcxLDM4OC42NjcsNTEyLDMyNC4zNzksNTEyLDI1NS45OTlTNDg1LjM3MSwxMjMuMzMzLDQzNy4wMTksNzQuOTgxeiBNMjU2LDQ3Ny40NTMNCgkJCWMtMTIyLjEwOSwwLTIyMS40NTMtOTkuMzQzLTIyMS40NTMtMjIxLjQ1M1MxMzMuODkxLDM0LjU0OCwyNTYsMzQuNTQ4czIyMS40NTMsOTkuMzQzLDIyMS40NTMsMjIxLjQ1Mw0KCQkJUzM3OC4xMDksNDc3LjQ1MywyNTYsNDc3LjQ1M3oiLz4NCgk8L2c+DQo8L2c+DQo8Zz4NCgk8Zz4NCgkJPHBhdGggZD0iTTM5My45NTMsMTYwLjcwOWMtMjEuOTA2LTIxLjkwNC01Ny4zNTUtMjEuOTA2LTc5LjI2NC0wLjAwMWwtODkuMjM4LDg5LjIzOWwtMjguMTQtMjguMTQxDQoJCQljLTIxLjkwMy0yMS45MDMtNTcuMzU0LTIxLjkwNi03OS4yNjIsMGMtMjEuODUyLDIxLjg1Mi0yMS44NTMsNTcuNDA4LDAsNzkuMjZsNjcuNzcyLDY3Ljc3Mg0KCQkJYzEwLjU4NiwxMC41ODYsMjQuNjYsMTYuNDE2LDM5LjYzMSwxNi40MTZzMjkuMDQ1LTUuODMsMzkuNjMxLTE2LjQxNWwxMjguODctMTI4Ljg3DQoJCQlDNDE1LjgwNSwyMTguMTE4LDQxNS44MDUsMTgyLjU2MSwzOTMuOTUzLDE2MC43MDl6IE0zNjkuNTIyLDIxNS41NDFMMjQwLjY1MywzNDQuNDFjLTQuMDYxLDQuMDYtOS40NTksNi4yOTctMTUuMjAyLDYuMjk3DQoJCQlzLTExLjE0Mi0yLjIzNy0xNS4yMDItNi4yOTdsLTY3Ljc3MS02Ny43NzJjLTguMzgzLTguMzgzLTguMzgzLTIyLjAyMiwwLTMwLjQwM2M4LjQwMi04LjQwMSwyMi04LjQwNCwzMC40MDQsMGw0MC4zNTUsNDAuMzU1DQoJCQljMy4yMzksMy4yMzksNy42MzMsNS4wNTksMTIuMjE0LDUuMDU5czguOTc1LTEuODIsMTIuMjE0LTUuMDU5bDEwMS40NTMtMTAxLjQ1M2M4LjQwMi04LjQwMSwyMi4wMDItOC40MDQsMzAuNDA0LDANCgkJCUMzNzcuOTA2LDE5My41MiwzNzcuOTA2LDIwNy4xNTksMzY5LjUyMiwyMTUuNTQxeiIvPg0KCTwvZz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjwvc3ZnPg0K" />
+                  </div>
+                  <div class="overviewCard-description">
+                    <h3 class="overviewCard-title text-light">SM12</h3>
+                    <p class="overviewCard-subtitle">Completed</p>
+                  </div>
+                </div>
+                <div class="overviewCard">
+                  <div class="overviewCard-icon overviewCard-icon--calendar">
+                     <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxnPg0KCTxnPg0KCQk8cGF0aCBkPSJNNDM3LjAxOSw3NC45ODFDMzg4LjY2OCwyNi42MjksMzI0LjM4LDAuMDAxLDI1NiwwLjAwMVMxMjMuMzMyLDI2LjYyOSw3NC45OCw3NC45ODFDMjYuNjI5LDEyMy4zMzMsMCwxODcuNjIxLDAsMjU2LjAwMQ0KCQkJczI2LjYyOSwxMzIuNjY4LDc0Ljk4LDE4MS4wMTljNDguMzUyLDQ4LjM1MSwxMTIuNjQsNzQuOTgsMTgxLjAyLDc0Ljk4YzY4LjM4MSwwLDEzMi42NjgtMjYuNjI5LDE4MS4wMTktNzQuOTgNCgkJCUM0ODUuMzcxLDM4OC42NjcsNTEyLDMyNC4zNzksNTEyLDI1NS45OTlTNDg1LjM3MSwxMjMuMzMzLDQzNy4wMTksNzQuOTgxeiBNMjU2LDQ3Ny40NTMNCgkJCWMtMTIyLjEwOSwwLTIyMS40NTMtOTkuMzQzLTIyMS40NTMtMjIxLjQ1M1MxMzMuODkxLDM0LjU0OCwyNTYsMzQuNTQ4czIyMS40NTMsOTkuMzQzLDIyMS40NTMsMjIxLjQ1Mw0KCQkJUzM3OC4xMDksNDc3LjQ1MywyNTYsNDc3LjQ1M3oiLz4NCgk8L2c+DQo8L2c+DQo8Zz4NCgk8Zz4NCgkJPHBhdGggZD0iTTM5My45NTMsMTYwLjcwOWMtMjEuOTA2LTIxLjkwNC01Ny4zNTUtMjEuOTA2LTc5LjI2NC0wLjAwMWwtODkuMjM4LDg5LjIzOWwtMjguMTQtMjguMTQxDQoJCQljLTIxLjkwMy0yMS45MDMtNTcuMzU0LTIxLjkwNi03OS4yNjIsMGMtMjEuODUyLDIxLjg1Mi0yMS44NTMsNTcuNDA4LDAsNzkuMjZsNjcuNzcyLDY3Ljc3Mg0KCQkJYzEwLjU4NiwxMC41ODYsMjQuNjYsMTYuNDE2LDM5LjYzMSwxNi40MTZzMjkuMDQ1LTUuODMsMzkuNjMxLTE2LjQxNWwxMjguODctMTI4Ljg3DQoJCQlDNDE1LjgwNSwyMTguMTE4LDQxNS44MDUsMTgyLjU2MSwzOTMuOTUzLDE2MC43MDl6IE0zNjkuNTIyLDIxNS41NDFMMjQwLjY1MywzNDQuNDFjLTQuMDYxLDQuMDYtOS40NTksNi4yOTctMTUuMjAyLDYuMjk3DQoJCQlzLTExLjE0Mi0yLjIzNy0xNS4yMDItNi4yOTdsLTY3Ljc3MS02Ny43NzJjLTguMzgzLTguMzgzLTguMzgzLTIyLjAyMiwwLTMwLjQwM2M4LjQwMi04LjQwMSwyMi04LjQwNCwzMC40MDQsMGw0MC4zNTUsNDAuMzU1DQoJCQljMy4yMzksMy4yMzksNy42MzMsNS4wNTksMTIuMjE0LDUuMDU5czguOTc1LTEuODIsMTIuMjE0LTUuMDU5bDEwMS40NTMtMTAxLjQ1M2M4LjQwMi04LjQwMSwyMi4wMDItOC40MDQsMzAuNDA0LDANCgkJCUMzNzcuOTA2LDE5My41MiwzNzcuOTA2LDIwNy4xNTksMzY5LjUyMiwyMTUuNTQxeiIvPg0KCTwvZz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjwvc3ZnPg0K" />
+                  </div>
+                  <div class="overviewCard-description">
+                    <h3 class="overviewCard-title text-light">SM13</h3>
+                    <p class="overviewCard-subtitle">Completed</p>
+                  </div>
+                </div>
+                <div class="overviewCard">
+                  <div class="overviewCard-icon overviewCard-icon--calendar">
+                     <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxnPg0KCTxnPg0KCQk8cGF0aCBkPSJNNDM3LjAxOSw3NC45ODFDMzg4LjY2OCwyNi42MjksMzI0LjM4LDAuMDAxLDI1NiwwLjAwMVMxMjMuMzMyLDI2LjYyOSw3NC45OCw3NC45ODFDMjYuNjI5LDEyMy4zMzMsMCwxODcuNjIxLDAsMjU2LjAwMQ0KCQkJczI2LjYyOSwxMzIuNjY4LDc0Ljk4LDE4MS4wMTljNDguMzUyLDQ4LjM1MSwxMTIuNjQsNzQuOTgsMTgxLjAyLDc0Ljk4YzY4LjM4MSwwLDEzMi42NjgtMjYuNjI5LDE4MS4wMTktNzQuOTgNCgkJCUM0ODUuMzcxLDM4OC42NjcsNTEyLDMyNC4zNzksNTEyLDI1NS45OTlTNDg1LjM3MSwxMjMuMzMzLDQzNy4wMTksNzQuOTgxeiBNMjU2LDQ3Ny40NTMNCgkJCWMtMTIyLjEwOSwwLTIyMS40NTMtOTkuMzQzLTIyMS40NTMtMjIxLjQ1M1MxMzMuODkxLDM0LjU0OCwyNTYsMzQuNTQ4czIyMS40NTMsOTkuMzQzLDIyMS40NTMsMjIxLjQ1Mw0KCQkJUzM3OC4xMDksNDc3LjQ1MywyNTYsNDc3LjQ1M3oiLz4NCgk8L2c+DQo8L2c+DQo8Zz4NCgk8Zz4NCgkJPHBhdGggZD0iTTM5My45NTMsMTYwLjcwOWMtMjEuOTA2LTIxLjkwNC01Ny4zNTUtMjEuOTA2LTc5LjI2NC0wLjAwMWwtODkuMjM4LDg5LjIzOWwtMjguMTQtMjguMTQxDQoJCQljLTIxLjkwMy0yMS45MDMtNTcuMzU0LTIxLjkwNi03OS4yNjIsMGMtMjEuODUyLDIxLjg1Mi0yMS44NTMsNTcuNDA4LDAsNzkuMjZsNjcuNzcyLDY3Ljc3Mg0KCQkJYzEwLjU4NiwxMC41ODYsMjQuNjYsMTYuNDE2LDM5LjYzMSwxNi40MTZzMjkuMDQ1LTUuODMsMzkuNjMxLTE2LjQxNWwxMjguODctMTI4Ljg3DQoJCQlDNDE1LjgwNSwyMTguMTE4LDQxNS44MDUsMTgyLjU2MSwzOTMuOTUzLDE2MC43MDl6IE0zNjkuNTIyLDIxNS41NDFMMjQwLjY1MywzNDQuNDFjLTQuMDYxLDQuMDYtOS40NTksNi4yOTctMTUuMjAyLDYuMjk3DQoJCQlzLTExLjE0Mi0yLjIzNy0xNS4yMDItNi4yOTdsLTY3Ljc3MS02Ny43NzJjLTguMzgzLTguMzgzLTguMzgzLTIyLjAyMiwwLTMwLjQwM2M4LjQwMi04LjQwMSwyMi04LjQwNCwzMC40MDQsMGw0MC4zNTUsNDAuMzU1DQoJCQljMy4yMzksMy4yMzksNy42MzMsNS4wNTksMTIuMjE0LDUuMDU5czguOTc1LTEuODIsMTIuMjE0LTUuMDU5bDEwMS40NTMtMTAxLjQ1M2M4LjQwMi04LjQwMSwyMi4wMDItOC40MDQsMzAuNDA0LDANCgkJCUMzNzcuOTA2LDE5My41MiwzNzcuOTA2LDIwNy4xNTksMzY5LjUyMiwyMTUuNTQxeiIvPg0KCTwvZz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjwvc3ZnPg0K" />
+                  </div>
+                  <div class="overviewCard-description">
+                    <h3 class="overviewCard-title text-light">AL08</h3>
+                    <p class="overviewCard-subtitle">Completed</p>
+                  </div>
+                </div>
+                <div class="overviewCard">
+                  <div class="overviewCard-icon overviewCard-icon--calendar">
+                     <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxnPg0KCTxnPg0KCQk8cGF0aCBkPSJNNDM3LjAxOSw3NC45ODFDMzg4LjY2OCwyNi42MjksMzI0LjM4LDAuMDAxLDI1NiwwLjAwMVMxMjMuMzMyLDI2LjYyOSw3NC45OCw3NC45ODFDMjYuNjI5LDEyMy4zMzMsMCwxODcuNjIxLDAsMjU2LjAwMQ0KCQkJczI2LjYyOSwxMzIuNjY4LDc0Ljk4LDE4MS4wMTljNDguMzUyLDQ4LjM1MSwxMTIuNjQsNzQuOTgsMTgxLjAyLDc0Ljk4YzY4LjM4MSwwLDEzMi42NjgtMjYuNjI5LDE4MS4wMTktNzQuOTgNCgkJCUM0ODUuMzcxLDM4OC42NjcsNTEyLDMyNC4zNzksNTEyLDI1NS45OTlTNDg1LjM3MSwxMjMuMzMzLDQzNy4wMTksNzQuOTgxeiBNMjU2LDQ3Ny40NTMNCgkJCWMtMTIyLjEwOSwwLTIyMS40NTMtOTkuMzQzLTIyMS40NTMtMjIxLjQ1M1MxMzMuODkxLDM0LjU0OCwyNTYsMzQuNTQ4czIyMS40NTMsOTkuMzQzLDIyMS40NTMsMjIxLjQ1Mw0KCQkJUzM3OC4xMDksNDc3LjQ1MywyNTYsNDc3LjQ1M3oiLz4NCgk8L2c+DQo8L2c+DQo8Zz4NCgk8Zz4NCgkJPHBhdGggZD0iTTM5My45NTMsMTYwLjcwOWMtMjEuOTA2LTIxLjkwNC01Ny4zNTUtMjEuOTA2LTc5LjI2NC0wLjAwMWwtODkuMjM4LDg5LjIzOWwtMjguMTQtMjguMTQxDQoJCQljLTIxLjkwMy0yMS45MDMtNTcuMzU0LTIxLjkwNi03OS4yNjIsMGMtMjEuODUyLDIxLjg1Mi0yMS44NTMsNTcuNDA4LDAsNzkuMjZsNjcuNzcyLDY3Ljc3Mg0KCQkJYzEwLjU4NiwxMC41ODYsMjQuNjYsMTYuNDE2LDM5LjYzMSwxNi40MTZzMjkuMDQ1LTUuODMsMzkuNjMxLTE2LjQxNWwxMjguODctMTI4Ljg3DQoJCQlDNDE1LjgwNSwyMTguMTE4LDQxNS44MDUsMTgyLjU2MSwzOTMuOTUzLDE2MC43MDl6IE0zNjkuNTIyLDIxNS41NDFMMjQwLjY1MywzNDQuNDFjLTQuMDYxLDQuMDYtOS40NTksNi4yOTctMTUuMjAyLDYuMjk3DQoJCQlzLTExLjE0Mi0yLjIzNy0xNS4yMDItNi4yOTdsLTY3Ljc3MS02Ny43NzJjLTguMzgzLTguMzgzLTguMzgzLTIyLjAyMiwwLTMwLjQwM2M4LjQwMi04LjQwMSwyMi04LjQwNCwzMC40MDQsMGw0MC4zNTUsNDAuMzU1DQoJCQljMy4yMzksMy4yMzksNy42MzMsNS4wNTksMTIuMjE0LDUuMDU5czguOTc1LTEuODIsMTIuMjE0LTUuMDU5bDEwMS40NTMtMTAxLjQ1M2M4LjQwMi04LjQwMSwyMi4wMDItOC40MDQsMzAuNDA0LDANCgkJCUMzNzcuOTA2LDE5My41MiwzNzcuOTA2LDIwNy4xNTksMzY5LjUyMiwyMTUuNTQxeiIvPg0KCTwvZz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjwvc3ZnPg0K" />
+                  </div>
+                  <div class="overviewCard-description">
+                    <h3 class="overviewCard-title text-light">ST22</strong></h3>
+                    <p class="overviewCard-subtitle">Completed</p>
+                  </div>
+                </div>
+                <div class="overviewCard">
+                  <div class="overviewCard-icon overviewCard-icon--calendar">
+                     <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxnPg0KCTxnPg0KCQk8cGF0aCBkPSJNNDM3LjAxOSw3NC45ODFDMzg4LjY2OCwyNi42MjksMzI0LjM4LDAuMDAxLDI1NiwwLjAwMVMxMjMuMzMyLDI2LjYyOSw3NC45OCw3NC45ODFDMjYuNjI5LDEyMy4zMzMsMCwxODcuNjIxLDAsMjU2LjAwMQ0KCQkJczI2LjYyOSwxMzIuNjY4LDc0Ljk4LDE4MS4wMTljNDguMzUyLDQ4LjM1MSwxMTIuNjQsNzQuOTgsMTgxLjAyLDc0Ljk4YzY4LjM4MSwwLDEzMi42NjgtMjYuNjI5LDE4MS4wMTktNzQuOTgNCgkJCUM0ODUuMzcxLDM4OC42NjcsNTEyLDMyNC4zNzksNTEyLDI1NS45OTlTNDg1LjM3MSwxMjMuMzMzLDQzNy4wMTksNzQuOTgxeiBNMjU2LDQ3Ny40NTMNCgkJCWMtMTIyLjEwOSwwLTIyMS40NTMtOTkuMzQzLTIyMS40NTMtMjIxLjQ1M1MxMzMuODkxLDM0LjU0OCwyNTYsMzQuNTQ4czIyMS40NTMsOTkuMzQzLDIyMS40NTMsMjIxLjQ1Mw0KCQkJUzM3OC4xMDksNDc3LjQ1MywyNTYsNDc3LjQ1M3oiLz4NCgk8L2c+DQo8L2c+DQo8Zz4NCgk8Zz4NCgkJPHBhdGggZD0iTTM5My45NTMsMTYwLjcwOWMtMjEuOTA2LTIxLjkwNC01Ny4zNTUtMjEuOTA2LTc5LjI2NC0wLjAwMWwtODkuMjM4LDg5LjIzOWwtMjguMTQtMjguMTQxDQoJCQljLTIxLjkwMy0yMS45MDMtNTcuMzU0LTIxLjkwNi03OS4yNjIsMGMtMjEuODUyLDIxLjg1Mi0yMS44NTMsNTcuNDA4LDAsNzkuMjZsNjcuNzcyLDY3Ljc3Mg0KCQkJYzEwLjU4NiwxMC41ODYsMjQuNjYsMTYuNDE2LDM5LjYzMSwxNi40MTZzMjkuMDQ1LTUuODMsMzkuNjMxLTE2LjQxNWwxMjguODctMTI4Ljg3DQoJCQlDNDE1LjgwNSwyMTguMTE4LDQxNS44MDUsMTgyLjU2MSwzOTMuOTUzLDE2MC43MDl6IE0zNjkuNTIyLDIxNS41NDFMMjQwLjY1MywzNDQuNDFjLTQuMDYxLDQuMDYtOS40NTksNi4yOTctMTUuMjAyLDYuMjk3DQoJCQlzLTExLjE0Mi0yLjIzNy0xNS4yMDItNi4yOTdsLTY3Ljc3MS02Ny43NzJjLTguMzgzLTguMzgzLTguMzgzLTIyLjAyMiwwLTMwLjQwM2M4LjQwMi04LjQwMSwyMi04LjQwNCwzMC40MDQsMGw0MC4zNTUsNDAuMzU1DQoJCQljMy4yMzksMy4yMzksNy42MzMsNS4wNTksMTIuMjE0LDUuMDU5czguOTc1LTEuODIsMTIuMjE0LTUuMDU5bDEwMS40NTMtMTAxLjQ1M2M4LjQwMi04LjQwMSwyMi4wMDItOC40MDQsMzAuNDA0LDANCgkJCUMzNzcuOTA2LDE5My41MiwzNzcuOTA2LDIwNy4xNTksMzY5LjUyMiwyMTUuNTQxeiIvPg0KCTwvZz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjwvc3ZnPg0K" />
+                  </div>
+                  <div class="overviewCard-description">
+                    <h3 class="overviewCard-title text-light">SCC4</h3>
+                    <p class="overviewCard-subtitle">Completed</p>
+                  </div>
+                </div>
+              </div> <!-- /.main__overview -->
+              <div class="main__cards">
+                <div class="card">
+                  <div class="card__header">
+                    <div class="card__header-title text-light"><strong>System Checks</strong></div>
+                  </div>
+                  <div class="card__main">
+                    <div class="card__row">
+                      <div class="card__icon"><i class="fas fa-gift"></i></div>
+                      <div class="card__time">
+                        <div>Check 1</div>
+                      </div>
+                      <div class="card__detail">
+                        <div class="card__source text-bold">T-Code : SICK </div>
+                        <div class="card__description">SAP Initial Consistency Check</div>
+                        <div class="card__note" style="background-color: RGB(98,206,127,0.2); color:black;width:25% ; border-radius: 5px ;text-align: center">Status: No errors</div>
+                      </div>
+                    </div>
+                    <div class="card__row">
+                      <div class="card__icon"><i class="fas fa-plane"></i></div>
+                      <div class="card__time">
+                        <div>Check 2</div>
+                      </div>
+                      <div class="card__detail">
+                        <div class="card__source text-bold">T-Code : SM12 </div>
+                        <div class="card__description">SM12-System Lock Entries - Status</div>
+                        <div class="card__note" style="background-color: RGB(98,206,127,0.2); color:black;width:32% ; border-radius: 5px;text-align: center" >Lock Entries Found: 2</div>
+                      </div>
+                    </div>
+                    <div class="card__row">
+                      <div class="card__icon"><i class="fas fa-book"></i></div>
+                      <div class="card__time">
+                        <div>Check 3</div>
+                      </div>
+                      <div class="card__detail">
+                        <div class="card__source text-bold">T-Code : SM13</div>
+                        <div class="card__description">SM13 Update Requests-Status</div>
+                        <div class="card__note" style="background-color: RGB(190,206,98,0.2); color:black;width:25% ; border-radius: 5px;text-align: center">Updates found: 0</div>
+                      </div>
+                    </div>
+                    <div class="card__row">
+                      <div class="card__icon"><i class="fas fa-heart"></i></div>
+                      <div class="card__time">
+                        <div>Check 4</div>
+                      </div>
+                      <div class="card__detail">
+                        <div class="card__source text-bold">T-Code :AL08 </div>
+                        <div class="card__description">System Wide List of User Sessions-Status</div>
+                        <div class="card__note" style="background-color: RGB(98,206,127,0.2); color:black;width:28% ; border-radius: 5px;text-align: center">USER Sessions : 8  ABAP Sessions : 8</div>
+                      </div>
+                    </div>
+                    <div class="card__row">
+                      <div class="card__icon"><i class="fas fa-heart"></i></div>
+                      <div class="card__time">
+                        <div>Check 5</div>
+                      </div>
+                      <div class="card__detail">
+                        <div class="card__source text-bold">T-Code : ST22</div>
+                        <div class="card__description">ABAP RunTime Error-Status</div>
+                        <div class="card__note" style="background-color: RGB(190,206,98,0.2); color:black;width:35% ; border-radius: 5px;text-align: center">Today : 1 , Yesterday : 0</div>
+                      </div>
+                    </div>
+                    <div class="card__row">
+                      <div class="card__icon"><i class="fas fa-heart"></i></div>
+                      <div class="card__time">
+                        <div>Check 6</div>
+                      </div>
+                      <div class="card__detail">
+                        <div class="card__source text-bold">T-Code : SCC4 </div>
+                        <div class="card__description">Development Client Status</div>
+                        <div class="card__note" style="background-color: RGB(98,206,127,0.2); color:black;width:30% ; border-radius: 5px;text-align: center">Last Change : Manoj </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card card--finance">
+                  <div class="card__header">
+                    <div class="card__header-title text-light"><strong>Analytics</strong></div>
+                  </div>
+                  <div id="chartdiv"></div>
+                </div>
+              </div> <!-- /.main-cards -->
+            </main>
+          </div>
+          <script src="https://cdn.amcharts.com/lib/4/core.js"></script>
+          <script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
+          <script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
+          <script src="https://www.amcharts.com/lib/4/themes/kelly.js"></script>
+          <script language="javascript" src="index.js"></script>
+    </body>
+</html>
