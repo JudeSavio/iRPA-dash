@@ -1,0 +1,41 @@
+
+
+
+
+
+  chart.data = [{
+    "tcode": "SICK",
+    "success": 1,
+    "faliure":0,
+    "warnings":0
+  },
+  {
+    "tcode": "SM12",
+    "success": 2,
+    "faliure":0,
+    "warnings":0
+  },
+  {
+    "tcode": "SM13",
+    "success": 1,
+    "faliure":0,
+    "warnings":0
+  },
+  {
+    "tcode": "AL08",
+    "success": 16,
+    "faliure":0,
+    "warnings":0
+  },
+  {
+    "tcode": "ST22",
+    "success": 1,
+    "faliure":0,
+    "warnings":0
+  },
+  {
+    "tcode": "SCC4",
+    "success": 2,
+    "faliure":0,
+    "warnings":0
+  }];

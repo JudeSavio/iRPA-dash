@@ -1,0 +1,337 @@
+body{
+    margin : 0;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)) , url('../img/wallpaper.png');
+    /*background-repeat: no-repeat;*/
+}
+
+header{
+    background: #008000 ;
+}
+
+header::after {
+    content: '';
+    display : table;
+    clear : both;
+}
+
+.container {
+    width:90%;
+    margin : 0 auto;
+}
+
+.logo {
+    float: left;
+    margin : 0 auto;
+    padding :15px 0;
+}
+
+nav {
+    float:right;
+}
+
+nav ul {
+    margin : 0;
+    padding-top : 10px;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+    padding:10px 0;
+    position: relative;
+}
+
+nav ul li a {
+    color : #FFFFFF;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-size: larger;
+}
+
+nav ul li a:hover{
+    color : #000
+}
+
+nav a::after {
+    content: '';
+    display: block;
+    height: 5px;
+    top : 0;
+    width:0%;
+    background-color: #000;
+}
+
+nav a:hover::after {
+    width : 100%;
+    transition: all ease-in-out 250ms;
+}
+
+#Info{
+    width : 450px;
+    height : 450px;
+    background-color: rgba(246,246,246,0.1);
+    border-radius : 5px;
+    float:left;
+    margin-top: 40px;
+    margin-left: 60px;
+    transition: 0s background-color;
+    position: relative;
+    text-align: center;
+}
+
+#Info:hover {
+    background-color: rgba(246,246,246,0.0);
+    transition-delay: 0.05s;
+}
+
+.Info_Container {
+    background-color: #f6f6f6;
+    position: absolute;
+    width: 85%;
+    height:65%;
+    top : 0;
+    left: 0;
+    bottom: 0;
+    right : 0;
+    margin:auto;
+    border-radius: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#Intro_Content{
+    font-size: 20px;
+    font-family: 'Abhaya Libre', serif;
+}
+
+#Quotes{
+    width : 450px;
+    height : 450px;
+    background-color: rgba(246,246,246,0.1);
+    border-radius : 5px;
+    float:left;
+    margin-top: 40px;
+    margin-left: 10px;
+    position: relative;
+}
+  
+#Quotes:hover {
+    background-color: rgba(246,246,246,0.0);
+    transition-delay: 0.05s;
+}
+
+#Quotes_Container{
+    background-color: #f6f6f6;
+    position: absolute;
+    width: 85%;
+    height:55%;
+    top : 0;
+    left: 0;
+    bottom: 0;
+    right : 0;
+    margin:auto;
+    border-radius: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 15px;
+    padding-bottom: 0;
+}
+
+#Repo_Content{
+    font-size: 17px;
+    font-family: 'Abhaya Libre', serif;
+}
+
+#Repo_Container{
+    background-color: #f6f6f6;
+    position: absolute;
+    width: 85%;
+    height:35%;
+    top : 0;
+    left: 0;
+    bottom: 0;
+    right : 0;
+    margin:auto;
+    border-radius: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: 15px;
+    padding-bottom: 0;
+}
+
+#Quote_Content{
+    font-size: 17px;
+    font-family: 'Abhaya Libre', serif;
+}
+
+#Author{
+    font-size: 17px;
+    font-family: 'Abhaya Libre', serif;
+}
+
+#container3{
+    width : 450px;
+    height : 450px;
+    background-color: rgba(246,246,246,0.1);
+    border-radius : 5px;
+    float : left;
+    margin-top: 40px;
+    margin-left: 10px;
+}
+
+#container3:hover {
+    background-color: rgba(246,246,246,0.0);
+    transition-delay: 0.05s;
+}
+
+#Interests{
+    width : 450px;
+    height : 450px;
+    background-color: rgba(246,246,246,0.1);
+    border-radius : 5px;
+    float : left;
+    margin-top: 10px;
+    margin-left: 60px;
+    position: relative;
+}
+
+#Interests:hover {
+    background-color: rgba(246,246,246,0.0);
+    transition-delay: 0.05s;
+}
+
+#Interest_Container{
+    background-color: #f6f6f6;
+    position: absolute;
+    width: 85%;
+    height:45%;
+    top : 0;
+    left: 0;
+    bottom: 0;
+    right : 0;
+    margin:auto;
+    border-radius: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#Interest_Container ul {
+    padding-top: 12%;
+    margin: 0;
+}
+
+#Interest_Container ul li{
+    list-style: none;
+    font-family: monospace;
+    font-size: 15;
+    font-weight: bold;
+}
+
+#Books{
+    width : 450px;
+    height : 450px;
+    background-color: rgba(246,246,246,0.1);
+    border-radius : 5px;
+    float : left;
+    margin-top: 10px;
+    margin-left: 10px;
+    position: relative;
+}
+
+#Books:hover {
+    background-color: rgba(246,246,246,0.0);
+    transition-delay: 0.05s;
+}
+
+#Books_Container{
+    background-color: #f6f6f6;
+    position: absolute;
+    width: 85%;
+    height:45%;
+    top : 0;
+    left: 0;
+    bottom: 0;
+    right : 0;
+    margin:auto;
+    border-radius: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#Books_Container ul {
+    padding-top: 12%;
+    margin: 0;
+}
+
+#Books_Container ul li{
+    list-style: none;
+    font-family: monospace;
+    font-size: 15;
+    font-weight: bold;
+}
+
+#Ideas{
+    width : 450px;
+    height : 450px;
+    background-color: rgba(246,246,246,0.1);
+    border-radius : 5px;
+    float : left;
+    margin-top: 10px;
+    margin-left: 10px;
+    position: relative;
+}
+
+#Ideas:hover {
+    background-color: rgba(246,246,246,0.0);
+    transition-delay: 0.05s;
+}
+
+#Ideas_Container{
+    background-color: #f6f6f6;
+    position: absolute;
+    width: 85%;
+    height:45%;
+    top : 0;
+    left: 0;
+    bottom: 0;
+    right : 0;
+    margin:auto;
+    border-radius: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#Ideas_Container ul {
+    padding-top: 12%;
+    margin: 0;
+}
+
+#Ideas_Container ul li{
+    list-style: none;
+    font-family: monospace;
+    font-size: 15;
+    font-weight: bold;
+}
+
+footer{
+    margin-top: 950px;
+    width:100%;
+    height:200px;
+    background-color: #008000 ;
+    position: absolute;
+    justify-content: center;
+    text-align: center;
+}
+
+footer ul li{
+    list-style: none;
+    float: left;
+    text-align: center;
+    justify-content: center;
+    margin-top: 3%;
+    margin-left: 17%;
+}
